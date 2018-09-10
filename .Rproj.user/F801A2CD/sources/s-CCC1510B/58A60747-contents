@@ -17,6 +17,7 @@ shiny:
 flask-images:
 	docker build -t kdgosik/apps:flask
 	docker build -t kdgosik/apps:flask-template flask/template
+	docker build -t kdgosik/apps:flask-static-example flask/apps/static-example
 	
 	
 # build a new flask app (from a template)
@@ -30,6 +31,7 @@ flask:
 go-images:
 	docker build -t kdgosik/apps:goapp
 	docker build -t kdgosik/apps:goapp-template goapp/template
+	docker build -t kdgosik/apps:goapp-static-example goapp/apps/static-example
 	
 # build a new go app (from a template)
 # use like `make goapp app=genius`
@@ -42,6 +44,7 @@ goapp:
 node-images:
 	docker build -t kdgosik/apps:node-images
 	docker build -t kdgosik/apps:node-template node/template
+	docker build -t kdgosik/apps:node-static-example node/apps/static-example
 	
 # build a new go app (from a template)
 # use like `make goapp app=genius`
