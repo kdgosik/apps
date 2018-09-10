@@ -17,8 +17,27 @@ This repo is heavily borrowed from [here](https://github.com/cpsievert/apps) and
 
 Each app has it's own [Docker](https://www.docker.com/) container, as well as a [image tag on DockerHub](https://hub.docker.com/r/kdgosik/apps/builds/), so you can easily run apps on your local machine; for example, this will run the [clifford-attractor (shiny) app](https://github.com/kdgosik/apps/tree/master/shiny/apps/clifford-attractor) on <http://localhost:3838>
 
+### shiny
 ```shell
 docker run -p 3838:3838 kdgosik/apps:shiny-clifford-attractor
+```
+
+
+### flask
+```shell
+docker run -p 3000:80 kdgosik/apps:flask-static-example
+```
+
+
+### go
+```shell
+docker run -p 8080:8080 kdgosik/apps:goapp-static-example
+```
+
+
+### node
+```shell
+docker run -p 3000:3000 kdgosik/apps:node-static-example
 ```
 
 If you'd like to run a particular app in this repo, you can get the relevant image tag from the [`application.yml`](https://github.com/kdgosik/apps/blob/master/application.yml) file.

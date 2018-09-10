@@ -1,7 +1,7 @@
 shiny:
   proxy:
-    title: Carson Sievert's Web Applications
-    logo-url: https://cpsievert.me/favicon.ico
+    title: Kirk Gosik's Web Applications
+    logo-url: 
     landing-page: /
     heartbeat-rate: 10000
     heartbeat-timeout: 60000
@@ -23,8 +23,8 @@ shiny:
   apps:
   - name: clifford-attractor
     display-name: clifford-attractor
-    description: App displaying Clifford Attractors (see <a href='http://paulbourke.net/fractals/clifford/'>here</a> and <a href='https://vimeo.com/190610577'>here</a> for demo).    docker-cmd: ["R", "-e", "shiny::runApp()"]
-    docker-image: cpsievert/apps:shiny-clifford-attractor
+    description: App displaying Clifford Attractors (see <a href='http://paulbourke.net/fractals/clifford/'>here</a> for demo). docker-cmd: ["R", "-e", "shiny::runApp()"]
+    docker-image: kdgosik/apps:shiny-clifford-attractor
 
   
 
