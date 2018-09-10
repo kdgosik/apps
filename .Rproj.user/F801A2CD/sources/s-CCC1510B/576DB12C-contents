@@ -54,3 +54,30 @@ Some guidelines for adding new apps:
 * Update install.R file to reflect the necessary packages for R to install.
 * Add `docker build -t kdgosik/apps:shiny-my-app shiny/apps/my-app` to the [Makefile](https://github.com/kdgosik/apps/blob/Makefile)
 * Under [apps](https://github.com/kdgosik/apps/blob/master/application.yml) in the `application.yml` file, add your app's name, description, etc.
+
+
+### flask
+
+* Run `make flask app=my-app` (replacing `my-app` with a suitable name).
+* Place your flask app under the new `flask/apps/my-app` directory.
+* Update requirements.txt file to reflect the necessary python modules to install.
+* Add `docker build -t kdgosik/apps:flask-my-app flask/apps/my-app` to the [Makefile](https://github.com/kdgosik/apps/blob/Makefile)
+* Under [apps](https://github.com/kdgosik/apps/blob/master/application.yml) in the `application.yml` file, add your app's name, description, etc.
+
+
+### go
+
+* Run `make goapp app=my-app` (replacing `my-app` with a suitable name).
+* Place your go app under the new `goapp/apps/my-app` directory.
+* Update requirements.txt file to reflect the necessary python modules to install.
+* Add `docker build -t kdgosik/apps:goapp-my-app goapp/apps/my-app` to the [Makefile](https://github.com/kdgosik/apps/blob/Makefile)
+* Under [apps](https://github.com/kdgosik/apps/blob/master/application.yml) in the `application.yml` file, add your app's name, description, etc.
+
+
+### node
+
+* Run `make node app=my-app` (replacing `my-app` with a suitable name).
+* Place your node app under the new `node/apps/my-app` directory.
+* Update package.json file to reflect the necessary python modules to install.
+* Add `docker build -t kdgosik/apps:node-my-app node/apps/my-app` to the [Makefile](https://github.com/kdgosik/apps/blob/Makefile)
+* Under [apps](https://github.com/kdgosik/apps/blob/master/application.yml) in the `application.yml` file, add your app's name, description, etc.
